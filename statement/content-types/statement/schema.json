@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statements",
+  "info": {
+    "singularName": "statement",
+    "pluralName": "statements",
+    "displayName": "Statement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "schema": "qweqwe",
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    },
+    "tags": {
+      "type": "text"
+    }
+  }
+}

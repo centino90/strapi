@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "researches",
+  "info": {
+    "singularName": "research",
+    "pluralName": "researches",
+    "displayName": "Research",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "text"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content"
+    }
+  }
+}
